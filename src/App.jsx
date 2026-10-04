@@ -1,13 +1,18 @@
+import About from "./components/About";
+import Nabar from "./components/Nabar";
+import Hero from "./components/Hero";
+import Properties from "./components/Properties";
+import WhyChooseUs from "./components/WhyChooseUs";
 
-import Nav from "./components/Nav";
-import Task1 from "./components/Task1";
-
-function App(props) {
+function App() {
   return (
-    <div>
-    <Nav/>
-    <Task1/>
-    </div>
+    <>
+      <Nabar />
+      <Hero />
+      <About />
+      <WhyChooseUs />
+      <Properties />
+    </>
   );
 }
 
