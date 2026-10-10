@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import Sidebar from "./component/Layout/Sidebar";
 import Heros from "./sections/Heros";
 import About from "./sections/About";
-
+import Works from "./sections/Works";
+import Contact from "./sections/Contact";
+import Expe from "./sections/Expe";
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
@@ -16,6 +18,9 @@ function App() {
       <main>
         <Heros />
         <About/>
+                <Works/>
+            <Contact/>
+           < Expe />
       </main>
     </div>
   );
