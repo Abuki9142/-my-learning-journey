@@ -6,6 +6,7 @@ body{
 
 .header {
     background: transparent;
+    background-color: black;
     padding: 16px 0;
     position: fixed;
     top: 0;
