@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📝 To-Do Application</h1>
+
+        <!-- Input Section -->
+        <div class="input-area">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task"
+            >
+
+            <button id="addBtn">
+                Add
+            </button>
+        </div>
+
+        <!-- Counter -->
+        <div class="counter">
+
+            <p>
+                Total:
+                <span id="total">0</span>
+            </p>
+
+            <p>
+                Completed:
+                <span id="completed">0</span>
+            </p>
+
+            <p>
+                Remaining:
+                <span id="remaining">0</span>
+            </p>
+
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+
+            <button data-filter="all">
+                All
+            </button>
+
+            <button data-filter="completed">
+                Completed
+            </button>
+
+            <button data-filter="pending">
+                Pending
+            </button>
+
+        </div>
+
+        <button id="clearCompleted">
+            Clear Completed
+        </button>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+    </div>
+
+<hr>
+
+<footer style="text-align: center; margin-top: 20px;">
+    <p><strong>Prepared by Abubeker Getachew</strong></p>
+    <script src="script.js"></script>
+    
+      
+
+</body>
+</html>
