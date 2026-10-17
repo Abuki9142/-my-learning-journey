@@ -1,0 +1,210 @@
+
+
+/* ==========================
+   GOOGLE FONT
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Overpass',sans-serif;
+    background:#121417;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.container{
+    width:100%;
+    max-width:410px;
+}
+
+.card{
+    background:#1f2630;
+    padding:32px;
+    border-radius:24px;
+    color:white;
+    animation:fade .35s ease;
+}
+
+/* ==========================
+   STAR
+========================== */
+
+.star{
+    width:48px;
+    height:48px;
+    background:#262f38;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+h1,h2{
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.description,
+.thank-card p{
+    color:#959eac;
+    line-height:1.6;
+    margin-bottom:28px;
+    font-size:15px;
+}
+
+/* ==========================
+   RATING BUTTONS
+========================== */
+
+.ratings{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:30px;
+}
+
+.rating-btn{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    border:none;
+    background:#262f38;
+    color:#959eac;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.rating-btn:hover{
+    background:#fc7614;
+    color:white;
+    transform:translateY(-2px);
+}
+
+.rating-btn:focus{
+    outline:2px solid white;
+    outline-offset:3px;
+}
+
+.rating-btn.active{
+    background:#7c8798;
+    color:white;
+}
+
+/* ==========================
+   SUBMIT BUTTON
+========================== */
+
+.submit-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#fc7614;
+    color:white;
+    font-weight:bold;
+    letter-spacing:3px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:white;
+    color:#fc7614;
+    transform:scale(1.03);
+}
+
+.submit-btn:focus{
+    outline:2px solid white;
+    outline-offset:3px;
+}
+
+/* ==========================
+   THANK YOU CARD
+========================== */
+
+.thank-card{
+    text-align:center;
+}
+
+.thank-image{
+    font-size:70px;
+    margin-bottom:25px;
+}
+
+.selected-rating{
+    display:inline-block;
+    background:#262f38;
+    color:#fc7614;
+    padding:10px 20px;
+    border-radius:30px;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.hidden{
+    display:none;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:480px){
+
+.card{
+
+    padding:24px;
+
+}
+
+.rating-btn{
+
+    width:45px;
+    height:45px;
+
+}
+
+.star{
+
+    width:42px;
+    height:42px;
+
+}
+
+}
