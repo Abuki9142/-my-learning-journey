@@ -1,5 +1,6 @@
 📘 Module 01 — AI Architecture, Model Selection & Advanced Terminology
 📑 Table of Contents
+
 1. Overview
 2. The Anatomy of an AI Application
 2.1 The "Brain" — LLM API / Inference Layer
