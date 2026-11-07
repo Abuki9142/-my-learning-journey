@@ -10,7 +10,7 @@ import { errorHandler } from './src/middleware/error-handler.js';
 
 const app = express();
 
-// Allow cross-origin requests from the frontend
+
 app.use(
     cors({
         origin: 'http://localhost:5173',
@@ -20,7 +20,6 @@ app.use(express.json())
 
 app.use('/api', mainRouter);
 
-//final middlware for error handling
 app.use(errorHandler)
 
 async function startServer() {
@@ -29,15 +28,16 @@ async function startServer() {
         connection.release();
         console.log('db connected')
 
-        app.listen(3000, err => {
+        app.listen(3000, (err) => {
             if (err) {
                 throw err
             }
 
             console.log("server is running on port http://localhost:3000")
         });
-    } catch (err) {
-        console.error('error starting server: ', err)
+    } catch (error)
+     {
+        console.error('error starting server: ', error.message)
     }
 }
 
